@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Javascript</title>
+    <link rel="stylesheet" href="styleCH9.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-txt">
+            <div class="header">
+            <h3>PENDAFTARAN PEMINATAN MOGE</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input class="label-nama" type="text" placeholder="Nama anda" id="nama"><br><br>
+            <label for="nim">Nim</label><br>
+            <input class="label-nim" type="text" placeholder="NIM anda" id="nim"><br>
+            <p>Peminatan pada motor:</p>
+            <input type="radio" name="peminatan" id="programming" value="programming">
+            <label for="programming">CBR500R</label><br>
+            <input type="radio" name="peminatan" id="desain" value="desain">
+            <label for="programming">CBR500F</label><br>
+            <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+            <label for="programming">
+                CB500X</label><br>
+            <input type="radio" name="peminatan" id="data" value="data">
+            <label for="programming">CMX 500 Rebel</label><br><br>
+            <label for="">Alamat</label>
+            <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+            <p class="label-box">
+                Angkatan :
+                <select id="mySelect">
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                </select>
+            </p>
+            <p class="date-time">
+                Tanggal :
+                <input type="date" id="tanggal">
+            </p>
+            <div class="button-container">
+                <button type="submit" onclick="kirimData()" class="button"><i
+                        class="fas fa-paper-plane"></i>Kirim</button>
+                <a href="CH5.html" class="button"><i class="fas fa-arrow-left"></i>Kembali</a>
+            </div>
+        </form>
+    </div>
+        </div>
+        <script src="Jsch9.js"></script>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>
